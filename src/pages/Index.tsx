@@ -1,16 +1,32 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import Navbar from "@/components/Navbar";
+import Hero from "@/components/Hero";
+import Skills from "@/components/Skills";
+import Projects from "@/components/Projects";
+import Experience from "@/components/Experience";
+import Education from "@/components/Education";
+import Achievements from "@/components/Achievements";
+import Contact from "@/components/Contact";
 
-// IMPORTANT: Fully REPLACE this with your own code
-const PlaceholderIndex = () => {
-  // PLACEHOLDER: Replace this entire return statement with the user's app.
-  // The inline background color is intentionally not part of the design system.
+const Index = () => {
   return (
-    <div className="flex min-h-screen items-center justify-center" style={{ backgroundColor: '#fcfbf8' }}>
-      <img data-lovable-blank-page-placeholder="REMOVE_THIS" src="/placeholder.svg" alt="Your app will live here!" />
+    <div className="min-h-screen bg-background">
+      <Navbar />
+      <Hero />
+      <Skills />
+      <Projects />
+      <Experience />
+      <Education />
+      <Achievements />
+      <Contact />
+      <footer className="border-t border-border py-8">
+        <div className="container">
+          <p className="font-mono text-[11px] text-muted-foreground uppercase tracking-widest">
+            © 2025 Lehlohonolo Mokoena. Built with React + TypeScript.
+          </p>
+        </div>
+      </footer>
     </div>
   );
 };
-
-const Index = PlaceholderIndex;
 
 export default Index;
