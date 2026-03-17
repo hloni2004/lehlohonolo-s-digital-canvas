@@ -3,7 +3,7 @@ import { ArrowDown, FileText, Mail } from "lucide-react";
 
 const Hero = () => {
   return (
-    <section className="min-h-[90vh] flex items-center">
+    <section className="min-h-[76vh] flex items-center">
       <div className="container">
         <div className="max-w-3xl">
           <motion.div
@@ -65,7 +65,9 @@ const Hero = () => {
               Contact Me
             </a>
             <a
-              href="#"
+              href="/LehlohonoloMokoena-Cv.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center gap-2 rounded-lg border border-border bg-card px-5 py-2.5 text-sm font-medium text-foreground transition-colors hover:bg-muted"
             >
               <FileText className="h-4 w-4" />

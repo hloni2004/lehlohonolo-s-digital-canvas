@@ -15,11 +15,11 @@ const skillCategories = [
   },
   {
     title: "Tools & Platforms",
-    skills: ["Docker", "AWS S3", "Supabase", "Git", "Postman", "Power BI"],
+    skills: ["AWS S3", "Supabase", "Git", "Postman", "Power BI"],
   },
   {
     title: "Concepts",
-    skills: ["RESTful APIs", "JWT Auth", "System Design", "Cloud Storage", "TDD (JUnit)"],
+    skills: ["RESTful APIs", "System Security", "System Design", "Cloud Storage", "TDD (JUnit)"],
   },
 ];
 

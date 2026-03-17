@@ -10,6 +10,7 @@ interface Project {
   techStack: string[];
   liveUrl?: string;
   githubUrl?: string;
+  backendGithubUrl?: string;
   isWinner?: boolean;
   status: string;
   year: string;
@@ -37,19 +38,42 @@ const projects: Project[] = [
   },
   {
     index: "02",
+    title: "LL Burger",
+    tagline: "Production-style full-stack ordering platform with real-time operations",
+    description:
+      "A full-stack burger ordering system with customer and admin experiences, secure role-based authentication, real-time status updates, and event-driven backend workflows.",
+    highlights: [
+      "Implemented role-based security for CUSTOMER, ADMIN, and SUPER users",
+      "Built JWT access and refresh-token authentication flow with secure refresh handling",
+      "Enabled real-time order and business updates via WebSocket/STOMP",
+      "Integrated RabbitMQ and Redis for async processing and caching",
+      "Designed admin workflows for catalog, users, orders, and audit logs",
+    ],
+    techStack: ["React", "TypeScript", "Vite", "Java", "Spring Boot", "PostgreSQL", "Redis", "RabbitMQ", "WebSocket", "JWT", "Docker"],
+    liveUrl: "https://llburgers-prompt-art.vercel.app",
+    githubUrl: "https://github.com/hloni2004/llburgers-prompt-art.git",
+    backendGithubUrl: "https://github.com/hloni2004/FoodMarket.git",
+    isWinner: false,
+    status: "DEPLOYED",
+    year: "2026",
+  },
+  {
+    index: "03",
     title: "Client Hub Portal",
     tagline: "Scalable e-commerce platform with real-time system updates",
     description:
       "Full-stack e-commerce application supporting product browsing, cart management, secure checkout, and real-time order and inventory updates.",
     highlights: [
       "Built with React + TypeScript and Spring Boot (Java)",
-      "Designed secure REST APIs with JWT authentication",
-      "Dockerized services for scalable deployment",
+      "Designed secure REST APIs with system security controls",
+      "Implemented hardened backend security practices",
       "Integrated AWS S3 for media storage",
       "Real-time order and inventory tracking",
     ],
-    techStack: ["React", "TypeScript", "Tailwind", "Java", "Spring Boot", "PostgreSQL", "Docker", "AWS S3", "JWT"],
-    liveUrl: "https://client-hub-portal.vercel.app/auth/login",
+    techStack: ["React", "TypeScript", "Tailwind", "Java", "Spring Boot", "PostgreSQL", "AWS S3", "System Security"],
+    liveUrl: "https://client-hub-portal.vercel.app",
+    githubUrl: "https://github.com/hloni2004/client-hub-portal-e5248649.git",
+    backendGithubUrl: "https://github.com/hloni2004/E_Commerce.git",
     isWinner: false,
     status: "LIVE",
     year: "2025",
@@ -158,7 +182,18 @@ const Projects = () => {
                     className="inline-flex items-center gap-1.5 text-sm font-medium text-foreground/70 hover:text-foreground transition-colors"
                   >
                     <Github className="h-3.5 w-3.5" />
-                    GitHub
+                    Frontend GitHub
+                  </a>
+                )}
+                {project.backendGithubUrl && (
+                  <a
+                    href={project.backendGithubUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-1.5 text-sm font-medium text-foreground/70 hover:text-foreground transition-colors"
+                  >
+                    <Github className="h-3.5 w-3.5" />
+                    Backend GitHub
                   </a>
                 )}
               </div>
