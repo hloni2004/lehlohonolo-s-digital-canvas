@@ -31,6 +31,7 @@ const projects: Project[] = [
       "Designed full-stack architecture with React + Node.js",
     ],
     techStack: ["React", "Node.js", "Express", "TypeScript", "Stellar", "Soroban", "Rust", "Supabase"],
+    liveUrl: "https://stellar-seven-wine.vercel.app", // Added live Stellar project link
     githubUrl: "https://github.com/hloni2004/StellarAchievements",
     isWinner: true,
     status: "WINNER",
